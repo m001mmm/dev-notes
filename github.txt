@@ -1,0 +1,131 @@
+可以，给你一版**适合截图保存**的。
+
+---
+
+# Git 命令速查版
+
+## 1）第一次上传项目到 GitHub
+
+```bash
+cd 项目路径
+git init
+git add .
+git commit -m "init project"
+git branch -M main
+git remote add origin https://github.com/你的用户名/仓库名.git
+git push -u origin main
+```
+
+---
+
+## 2）以后更新项目
+
+```bash
+git add .
+git commit -m "update"
+git push
+```
+
+---
+
+## 3）查看当前状态
+
+```bash
+git status
+```
+
+---
+
+## 4）查看远程仓库地址
+
+```bash
+git remote -v
+```
+
+---
+
+## 5）远程仓库绑错了，重新绑定
+
+```bash
+git remote remove origin
+git remote add origin https://github.com/你的用户名/仓库名.git
+```
+
+---
+
+## 6）设置 Git 用户名和邮箱
+
+```bash
+git config --global user.name "你的GitHub用户名"
+git config --global user.email "你的邮箱"
+```
+
+---
+
+## 7）常见报错对应
+
+```bash
+'git' 不是内部或外部命令
+```
+
+→ 没装 Git
+
+```bash
+fatal: not a git repository
+```
+
+→ 没进项目目录 / 没 git init
+
+```bash
+src refspec main does not match any
+```
+
+→ 还没 commit / 分支不对
+
+```bash
+Repository not found
+```
+
+→ GitHub 上没这个仓库 / 地址写错
+
+```bash
+403 Permission denied
+```
+
+→ GitHub 登录账号和仓库账号不一致
+
+---
+
+## 8）建议加的 `.gitignore`
+
+```gitignore
+node_modules/
+.env
+dist/
+build/
+```
+
+---
+
+# 最常用两套
+
+## 新项目上传
+
+```bash
+git init
+git add .
+git commit -m "init"
+git branch -M main
+git remote add origin 仓库地址
+git push -u origin main
+```
+
+## 日常更新
+
+```bash
+git add .
+git commit -m "update"
+git push
+```
+
+如果你想，我还能给你做一版 **“VS Code 里最常用的 Git 操作速查版”**。
