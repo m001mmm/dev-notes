@@ -1,10 +1,8 @@
-可以，给你一版**适合截图保存**的。
 
----
 
 # Git 命令速查版
 
-## 1）第一次上传项目到 GitHub
+1）第一次上传项目到 GitHub
 
 ```bash
 cd 项目路径
@@ -16,7 +14,7 @@ git remote add origin https://github.com/你的用户名/仓库名.git
 git push -u origin main
 ```
 
----
+
 
 ## 2）以后更新项目
 
@@ -26,7 +24,6 @@ git commit -m "update"
 git push
 ```
 
----
 
 ## 3）查看当前状态
 
@@ -34,7 +31,7 @@ git push
 git status
 ```
 
----
+
 
 ## 4）查看远程仓库地址
 
@@ -42,7 +39,7 @@ git status
 git remote -v
 ```
 
----
+
 
 ## 5）远程仓库绑错了，重新绑定
 
@@ -51,7 +48,7 @@ git remote remove origin
 git remote add origin https://github.com/你的用户名/仓库名.git
 ```
 
----
+
 
 ## 6）设置 Git 用户名和邮箱
 
@@ -60,7 +57,7 @@ git config --global user.name "你的GitHub用户名"
 git config --global user.email "你的邮箱"
 ```
 
----
+
 
 ## 7）常见报错对应
 
